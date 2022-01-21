@@ -8,10 +8,15 @@
 import UIKit
 
 class OfferClvCell: UICollectionViewCell {
-
+    @IBOutlet weak var imagOffer: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
 
+    func setupdata(offer :Offers?){
+        if let urlStr = URL(string: offer?.image ?? "") {
+            imagOffer.sd_setImage(with: urlStr, completed: nil)
+        }
+    }
 }

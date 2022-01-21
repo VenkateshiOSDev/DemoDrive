@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+import SDWebImage
 class CarDetailsClvCell: UICollectionViewCell {
     @IBOutlet weak var imagCar: UIImageView!
     @IBOutlet weak var lblName: UILabel!
@@ -16,6 +16,15 @@ class CarDetailsClvCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+    }
+    
+    func setupdata(car :Car?){
+        if let urlStr = URL(string: car?.image ?? "") {
+            imagCar.sd_setImage(with: urlStr, completed: nil)
+        }
+        lblName.text = car?.make ?? ""
+        lblInfo.text = (car?.transmission ?? "").capitalized + " " +  (car?.fuelType ?? "").capitalized
+        
     }
 
 }

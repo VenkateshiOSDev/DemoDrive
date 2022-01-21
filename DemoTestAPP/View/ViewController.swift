@@ -115,7 +115,9 @@ extension ViewController : UICollectionViewDelegate,UICollectionViewDataSource,U
         case .details:
             break
         case .social(features: let features, _):
-            
+            let vc = WebCustomViewController(nibName: "WebCustomViewController", bundle: nil)
+            vc.feature = features?[indexPath.row]
+            self.present(vc, animated: true, completion: nil)
             break
         case .offers(let offer, _):
             let vc = UIAlertController(title: "Offer", message: offer?[indexPath.section].name ?? "", preferredStyle: .alert)

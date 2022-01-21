@@ -16,26 +16,26 @@
                 <rect key="frame" x="0.0" y="0.0" width="526" height="138"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="square.and.arrow.down" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="kG6-pJ-6Ba">
-                        <rect key="frame" x="22" y="22" width="94" height="94"/>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="square.and.arrow.down" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="kG6-pJ-6Ba">
+                        <rect key="frame" x="12" y="12" width="104" height="104"/>
                         <constraints>
                             <constraint firstAttribute="width" secondItem="kG6-pJ-6Ba" secondAttribute="height" multiplier="1:1" id="NnO-RK-Wd8"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" text="Venkatesh Savarala" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ec5-Mc-vWA">
-                        <rect key="frame" x="128" y="22" width="386" height="20"/>
+                        <rect key="frame" x="128" y="12" width="386" height="20"/>
                         <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="18"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" text="Venkatesh Savarala" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="px8-gs-hxB">
-                        <rect key="frame" x="128" y="54" width="376" height="20"/>
+                        <rect key="frame" x="128" y="44" width="376" height="20"/>
                         <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="18"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" text="Automatic" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dNd-Lc-3D7">
-                        <rect key="frame" x="128" y="86" width="386" height="20"/>
+                        <rect key="frame" x="128" y="76" width="386" height="20"/>
                         <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="18"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -52,13 +52,19 @@
                 <constraint firstItem="dNd-Lc-3D7" firstAttribute="leading" secondItem="px8-gs-hxB" secondAttribute="leading" id="W6Z-5B-Ldp"/>
                 <constraint firstAttribute="trailing" secondItem="Ec5-Mc-vWA" secondAttribute="trailing" constant="12" id="XKO-p8-bgh"/>
                 <constraint firstItem="Ec5-Mc-vWA" firstAttribute="top" secondItem="kG6-pJ-6Ba" secondAttribute="top" id="cE6-6N-tPi"/>
-                <constraint firstItem="kG6-pJ-6Ba" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="22" id="jX2-B9-WIk"/>
-                <constraint firstItem="kG6-pJ-6Ba" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="22" id="qP0-S1-jcK"/>
+                <constraint firstItem="kG6-pJ-6Ba" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="12" id="jX2-B9-WIk"/>
+                <constraint firstItem="kG6-pJ-6Ba" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="12" id="qP0-S1-jcK"/>
                 <constraint firstAttribute="trailing" secondItem="dNd-Lc-3D7" secondAttribute="trailing" constant="12" id="v0C-Rn-iCc"/>
                 <constraint firstAttribute="bottom" secondItem="kG6-pJ-6Ba" secondAttribute="bottom" constant="22" id="wsh-cC-DV4"/>
                 <constraint firstItem="Ec5-Mc-vWA" firstAttribute="leading" secondItem="kG6-pJ-6Ba" secondAttribute="trailing" constant="12" id="y5y-nx-61f"/>
             </constraints>
             <size key="customSize" width="526" height="138"/>
+            <connections>
+                <outlet property="imagCar" destination="kG6-pJ-6Ba" id="yW0-v5-d4F"/>
+                <outlet property="lblInfo" destination="dNd-Lc-3D7" id="3T3-35-3uz"/>
+                <outlet property="lblLicNumber" destination="px8-gs-hxB" id="rND-Fu-9gM"/>
+                <outlet property="lblName" destination="Ec5-Mc-vWA" id="1xM-pI-cRg"/>
+            </connections>
             <point key="canvasLocation" x="482.60869565217394" y="127.90178571428571"/>
         </collectionViewCell>
     </objects>
