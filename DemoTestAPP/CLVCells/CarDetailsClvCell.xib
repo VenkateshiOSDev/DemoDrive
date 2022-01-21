@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="gTV-IL-0wX" customClass="CarDetailsClvCell" customModule="DemoTestAPP" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="526" height="138"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="526" height="138"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="square.and.arrow.down" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="kG6-pJ-6Ba">
+                        <rect key="frame" x="22" y="22" width="94" height="94"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="kG6-pJ-6Ba" secondAttribute="height" multiplier="1:1" id="NnO-RK-Wd8"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" text="Venkatesh Savarala" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ec5-Mc-vWA">
+                        <rect key="frame" x="128" y="22" width="386" height="20"/>
+                        <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="18"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" text="Venkatesh Savarala" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="px8-gs-hxB">
+                        <rect key="frame" x="128" y="54" width="376" height="20"/>
+                        <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="18"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" text="Automatic" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dNd-Lc-3D7">
+                        <rect key="frame" x="128" y="86" width="386" height="20"/>
+                        <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="18"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="px8-gs-hxB" secondAttribute="trailing" constant="22" id="HN6-t2-75z"/>
+                <constraint firstItem="dNd-Lc-3D7" firstAttribute="top" secondItem="px8-gs-hxB" secondAttribute="bottom" constant="12" id="I8O-a5-ZFx"/>
+                <constraint firstItem="px8-gs-hxB" firstAttribute="top" secondItem="Ec5-Mc-vWA" secondAttribute="bottom" constant="12" id="SW3-Cu-x1b"/>
+                <constraint firstItem="px8-gs-hxB" firstAttribute="leading" secondItem="Ec5-Mc-vWA" secondAttribute="leading" id="Td4-Y7-9F1"/>
+                <constraint firstItem="dNd-Lc-3D7" firstAttribute="leading" secondItem="px8-gs-hxB" secondAttribute="leading" id="W6Z-5B-Ldp"/>
+                <constraint firstAttribute="trailing" secondItem="Ec5-Mc-vWA" secondAttribute="trailing" constant="12" id="XKO-p8-bgh"/>
+                <constraint firstItem="Ec5-Mc-vWA" firstAttribute="top" secondItem="kG6-pJ-6Ba" secondAttribute="top" id="cE6-6N-tPi"/>
+                <constraint firstItem="kG6-pJ-6Ba" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="22" id="jX2-B9-WIk"/>
+                <constraint firstItem="kG6-pJ-6Ba" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="22" id="qP0-S1-jcK"/>
+                <constraint firstAttribute="trailing" secondItem="dNd-Lc-3D7" secondAttribute="trailing" constant="12" id="v0C-Rn-iCc"/>
+                <constraint firstAttribute="bottom" secondItem="kG6-pJ-6Ba" secondAttribute="bottom" constant="22" id="wsh-cC-DV4"/>
+                <constraint firstItem="Ec5-Mc-vWA" firstAttribute="leading" secondItem="kG6-pJ-6Ba" secondAttribute="trailing" constant="12" id="y5y-nx-61f"/>
+            </constraints>
+            <size key="customSize" width="526" height="138"/>
+            <point key="canvasLocation" x="482.60869565217394" y="127.90178571428571"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="square.and.arrow.down" catalog="system" width="121" height="128"/>
+    </resources>
+</document>
